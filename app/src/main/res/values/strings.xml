@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">MemoFlow</string>
+    <string name="tagline">Personal Notes &amp; Productivity</string>
+
+    <!-- Navigation & Tabs -->
+    <string name="tab_notes">Notes</string>
+    <string name="tab_favorites">Favorites</string>
+    <string name="tab_archive">Archive</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Header & Dashboard -->
+    <string name="greeting_default">Welcome back,</string>
+    <string name="stat_total">Total Notes</string>
+    <string name="stat_favorites">Favorites</string>
+    <string name="stat_completed">Completed</string>
+
+    <!-- Search & Filters -->
+    <string name="search_hint">Search notes by title or content…</string>
+    <string name="cat_all">All</string>
+    <string name="cat_personal">Personal</string>
+    <string name="cat_study">Study</string>
+    <string name="cat_work">Work</string>
+    <string name="cat_ideas">Ideas</string>
+
+    <!-- Note Actions -->
+    <string name="add_note">New Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="note_details">Note Details</string>
+    <string name="save_note">Save Note</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="pin">Pin</string>
+    <string name="unpin">Unpin</string>
+    <string name="favorite">Favorite</string>
+    <string name="unfavorite">Unfavorite</string>
+    <string name="archive">Archive</string>
+    <string name="unarchive">Unarchive</string>
+    <string name="mark_completed">Mark Done</string>
+    <string name="mark_pending">Mark Pending</string>
+
+    <!-- Add/Edit Form Labels -->
+    <string name="title_hint">Note Title</string>
+    <string name="content_hint">Write your thoughts, tasks, or ideas here…</string>
+    <string name="select_category">Category</string>
+    <string name="option_pinned">Pin to top</string>
+    <string name="option_favorite">Mark as favorite</string>
+    <string name="validation_title_required">Title cannot be empty</string>
+    <string name="validation_content_required">Content cannot be empty</string>
+
+    <!-- Detail Screen -->
+    <string name="created_at">Created: %1$s</string>
+    <string name="updated_at">Updated: %1$s</string>
+    <string name="confirm_delete_title">Delete Note?</string>
+    <string name="confirm_delete_msg">Are you sure you want to permanently delete this note? This action cannot be undone.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Application Settings</string>
+    <string name="section_appearance">Appearance &amp; Layout</string>
+    <string name="theme_preference">App Theme</string>
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light Theme</string>
+    <string name="theme_dark">Dark Theme</string>
+
+    <string name="layout_density">List Density</string>
+    <string name="layout_comfortable">Comfortable Cards</string>
+    <string name="layout_compact">Compact List</string>
+
+    <string name="section_defaults">Defaults &amp; Filtering</string>
+    <string name="default_sort">Default Sort Order</string>
+    <string name="sort_newest">Newest First</string>
+    <string name="sort_oldest">Oldest First</string>
+    <string name="sort_title">Title (A-Z)</string>
+    <string name="sort_updated">Recently Updated</string>
+
+    <string name="default_category">Default Category</string>
+
+    <string name="section_data">Data &amp; Sample Content</string>
+    <string name="btn_populate_samples">Load Sample Productivity Notes</string>
+    <string name="btn_clear_all_data">Clear All Notes Database</string>
+    <string name="confirm_clear_data_msg">This will erase all stored notes from SQLite. Are you sure?</string>
+
+    <string name="persistence_info_title">Dual Storage Architecture</string>
+    <string name="persistence_info_desc">• SQLite Database stores all notes, timestamps, categories, and statuses.\n• SharedPreferences stores theme mode, sort preferences, card density, and app settings.</string>
+
+    <!-- Messages / Toast / Feedback -->
+    <string name="note_saved">Note saved successfully</string>
+    <string name="note_updated">Note updated successfully</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="note_archived">Note archived</string>
+    <string name="note_unarchived">Note restored from archive</string>
+    <string name="samples_added">Sample notes loaded into SQLite!</string>
+    <string name="all_data_cleared">Database cleared!</string>
+
+    <!-- Empty States -->
+    <string name="empty_notes_title">No notes found</string>
+    <string name="empty_notes_sub">Tap the + button to create your first note or load sample notes in Settings.</string>
+    <string name="empty_favorites_title">No favorite notes yet</string>
+    <string name="empty_favorites_sub">Star important notes to access them quickly from this tab.</string>
+    <string name="empty_archive_title">Archive is empty</string>
+    <string name="empty_archive_sub">Archived notes will appear here out of your main workspace.</string>
+</resources>

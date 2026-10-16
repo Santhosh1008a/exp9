@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardNote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:strokeColor="@color/border_light"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Header Bar inside card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_category_pill"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/cat_personal_text"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Personal" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnPin"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_pin"
+                app:tint="@color/pinned_indigo"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:contentDescription="@string/pin" />
+
+            <ImageView
+                android:id="@+id/btnFavorite"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_favorite_border"
+                app:tint="@color/favorite_gold"
+                android:contentDescription="@string/favorite" />
+
+            <ImageView
+                android:id="@+id/btnComplete"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_circle_outline"
+                app:tint="@color/completed_green"
+                android:contentDescription="@string/mark_completed" />
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_primary_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Mobile Development Lab Project Setup" />
+
+        <!-- Snippet Content -->
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/text_secondary_light"
+            android:textSize="14sp"
+            tools:text="Remember to structure SQLite database tables properly with parameterized SQL queries and auto-increment primary keys." />
+
+        <!-- Footer Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_secondary_light"
+                android:textSize="12sp"
+                tools:text="Oct 16 • 11:30 AM" />
+
+            <ImageView
+                android:id="@+id/btnArchive"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_archive"
+                app:tint="@color/archived_slate"
+                android:contentDescription="@string/archive" />
+
+            <ImageView
+                android:id="@+id/btnDelete"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/delete_red"
+                android:contentDescription="@string/delete" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
