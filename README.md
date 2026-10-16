@@ -100,3 +100,30 @@ com.example.exp9
 This project was built for an Android Development Practical Demonstration (Experiment 9):
 1. **SharedPreferences**: Demonstrates storing non-relational user preferences that survive app restarts.
 2. **SQLite Database**: Demonstrates relational database setup, table creation, CRUD operations, parameterized SQL queries, cursor parsing, and statistics aggregation using native `SQLiteOpenHelper`.
+
+---
+
+## 📸 Experiment Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="./Screenshot_20261016_123623.png" alt="MemoFlow dashboard with note statistics and list actions" width="320"><br>
+      <sub><strong>Dashboard & Stats:</strong> Shows live note counters and card-level actions (pin, favorite, complete, archive/delete) backed by SQLite updates.</sub>
+    </td>
+    <td align="center">
+      <img src="./Screenshot_20261016_123637.png" alt="MemoFlow note management screen demonstrating CRUD workflow" width="320"><br>
+      <sub><strong>Notes Workflow:</strong> Demonstrates list-based note management where users review entries and trigger create/edit/delete operations.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./Screenshot_20261016_123701.png" alt="MemoFlow filtering and organization view" width="320"><br>
+      <sub><strong>Search & Organization:</strong> Highlights category-based organization and fast note retrieval, reflecting experiment focus on practical data handling.</sub>
+    </td>
+    <td align="center">
+      <img src="./Screenshot_20261016_123718.png" alt="MemoFlow preferences and app behavior persistence view" width="320"><br>
+      <sub><strong>Preference Persistence:</strong> Captures user-facing configuration behavior that is retained using SharedPreferences between app launches.</sub>
+    </td>
+  </tr>
+</table>
